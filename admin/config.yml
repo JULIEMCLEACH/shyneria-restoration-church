@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: JULIEMCLEACH/shyneria-restoration-church
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Website Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.html"
+        fields:
+          - { label: "Page Content", name: "body", widget: "code" }
