@@ -4,7 +4,7 @@
 </style></head><body><main><img class="hero" src="/images/shyneria-logo.jpg" alt="Welcome to Shyneria — Open to Find a Kingdom Inside, with mushrooms, acorns and vines"><nav aria-label="Main navigation"><a class="button" href="#our-story">Our Story</a><a class="button" href="#our-mission">Our Mission</a><a class="button" href="#library">Library</a><a class="button" href="#contact-us">Contact Us</a></nav>
 <section id="our-story"><h2>Our Story</h2><p>Our story will appear here.</p></section>
 <section id="our-mission"><h2>Our Mission</h2><p>Our mission will appear here.</p></section>
-<section id="library"><h2>Library</h2><p>Our books and coloring pages will appear here.</p><a class="button" href="/FINISHED%20UPDATED%20BOOK%201%2011-11-2026.pdf" target="_blank" rel="noopener">BOOK 1</a></section>
+<section id="library"><h2>Library</h2><p>Our books and coloring pages will appear here.</p><a class="button" href="/FINISHED%20UPDATED%20BOOK%201%2011-1-2026.pdf" target="_blank" rel="noopener">BOOK 1</a></section>
 <section id="contact-us"><h2>Contact Us</h2><p>Contact information will appear here.</p></section>
 </main><script>
 fetch("/content/home.json").then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{for(const key of ["our-story","our-mission","library","contact-us"]){const section=document.getElementById(key);if(section&&typeof data[key]==="string")section.querySelector("p").textContent=data[key];}}).catch(()=>{});
