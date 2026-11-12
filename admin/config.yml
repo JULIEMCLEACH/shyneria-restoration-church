@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: JULIEMCLEACH/shyneria-restoration-church
   branch: main
 
 media_folder: "images"
@@ -12,6 +11,10 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "index.html"
+        file: "content/home.json"
+        format: "json"
         fields:
-          - { label: "Page Content", name: "body", widget: "code" }
+          - { label: "Our Story", name: "our-story", widget: "text" }
+          - { label: "Our Mission", name: "our-mission", widget: "text" }
+          - { label: "Library Introduction", name: "library", widget: "text" }
+          - { label: "Contact Us", name: "contact-us", widget: "text" }
