@@ -1,11 +1,10 @@
-
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Welcome to Shyneria</title><style>
 :root{font-family:Georgia,serif;color:#284222;background:#fcf8ef}*{box-sizing:border-box}body{margin:0}main{max-width:850px;margin:auto;padding:16px;text-align:center}.hero{display:block;width:min(100%,520px);height:auto;margin:0 auto 20px}nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:540px;margin:0 auto 36px}a.button{display:block;padding:16px 8px;background:#3c6334;color:white;text-decoration:none;border-radius:12px;font:bold 1.1rem Georgia,serif}a.button:hover,a.button:focus{background:#254b28}section{max-width:640px;margin:28px auto;padding:22px;border:1px solid #d6d9c6;border-radius:12px;background:#fffdf8;text-align:left}section h2{margin-top:0}section p{line-height:1.6;white-space:pre-line}footer{font-size:.9rem;color:#5c6c55;margin:32px 0}@media(max-width:400px){nav{grid-template-columns:1fr}.hero{width:100%}}
 </style></head><body><main><img class="hero" src="/images/shyneria-logo.jpg" alt="Welcome to Shyneria — Open to Find a Kingdom Inside, with mushrooms, acorns and vines"><nav aria-label="Main navigation"><a class="button" href="#our-story">Our Story</a><a class="button" href="#our-mission">Our Mission</a><a class="button" href="#library">Library</a><a class="button" href="#contact-us">Contact Us</a></nav>
 <section id="our-story"><h2>Our Story</h2><p>Our story will appear here.</p></section>
 <section id="our-mission"><h2>Our Mission</h2><p>Our mission will appear here.</p></section>
-<section id="library"><h2>Library</h2><p>Our books and coloring pages will appear here.</p><a class="button" href="/Book%201.pdf" target="_blank" rel="noopener">BOOK 1</a></section>
+<section id="library"><h2>Library</h2><p>Our books and coloring pages will appear here.</p><a class="button" href="/FINISHED%20UPDATED%20BOOK%201%2011-11-2026.pdf" target="_blank" rel="noopener">BOOK 1</a></section>
 <section id="contact-us"><h2>Contact Us</h2><p>Contact information will appear here.</p></section>
 </main><script>
 fetch("/content/home.json").then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{for(const key of ["our-story","our-mission","library","contact-us"]){const section=document.getElementById(key);if(section&&typeof data[key]==="string")section.querySelector("p").textContent=data[key];}}).catch(()=>{});
