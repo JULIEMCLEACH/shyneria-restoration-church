@@ -20,7 +20,62 @@ section h2{margin-top:0}
 section p{line-height:1.6;white-space:pre-line}
 section a.button{margin:12px 0}
 footer{font-size:.9rem;color:#5c6c55;margin:32px 0}
-@media(max-width:400px){nav{grid-template-columns:1fr}.hero{width:100%}}
+
+.coloring-area{
+max-width:640px;
+margin:0 auto 36px;
+}
+
+.coloring-area summary{
+display:block;
+padding:18px 12px;
+background:#3c6334;
+color:white;
+border-radius:12px;
+font:bold 1.15rem Georgia,serif;
+cursor:pointer;
+list-style:none;
+}
+
+.coloring-area summary::-webkit-details-marker{
+display:none;
+}
+
+.coloring-area summary:hover{
+background:#254b28;
+}
+
+.coloring-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:16px;
+margin-top:20px;
+}
+
+.coloring-card{
+background:#fffdf8;
+border:1px solid #d6d9c6;
+border-radius:12px;
+padding:12px;
+}
+
+.coloring-card img{
+display:block;
+width:100%;
+height:auto;
+border:1px solid #d6d9c6;
+border-radius:6px;
+}
+
+.coloring-card a.button{
+margin-top:10px;
+font-size:.95rem;
+}
+
+@media(max-width:400px){
+nav{grid-template-columns:1fr}
+.hero{width:100%}
+}
 </style>
 </head>
 <body>
@@ -35,6 +90,42 @@ footer{font-size:.9rem;color:#5c6c55;margin:32px 0}
 <a class="button" href="#contact-us">Contact Us</a>
 <a class="button bulletin" href="bulletin.html">Bulletin</a>
 </nav>
+
+<details class="coloring-area">
+<summary>GET YOUR FREE COLORING PAGE TODAY!</summary>
+
+<h2>Free Coloring Pages</h2>
+
+<p>Choose your favorite coloring page, download it, print it, and let your imagination bring it to life! Enjoy all three and check back for new coloring adventures.</p>
+
+<div class="coloring-gallery">
+
+<div class="coloring-card">
+<a href="ColoringPage1.png" target="_blank" rel="noopener">
+<img src="ColoringPage1.png" alt="Free Coloring Page 1" loading="lazy">
+</a>
+<a class="button" href="ColoringPage1.png" download>DOWNLOAD PAGE 1</a>
+</div>
+
+<div class="coloring-card">
+<a href="ColoringPage2.png" target="_blank" rel="noopener">
+<img src="ColoringPage2.png" alt="Free Coloring Page 2" loading="lazy">
+</a>
+<a class="button" href="ColoringPage2.png" download>DOWNLOAD PAGE 2</a>
+</div>
+
+<div class="coloring-card">
+<a href="ColoringPage3.png" target="_blank" rel="noopener">
+<img src="ColoringPage3.png" alt="Free Coloring Page 3" loading="lazy">
+</a>
+<a class="button" href="ColoringPage3.png" download>DOWNLOAD PAGE 3</a>
+</div>
+
+</div>
+
+<p>Always free. Happy coloring!</p>
+
+</details>
 
 <section id="our-story">
 <h2>Our Story</h2>
